@@ -12,12 +12,13 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @ToString
 public class Turno {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "paciente_id", referencedColumnName = "id")
+    @JoinColumn(name = "paciente_id", referencedColumnName = "dni", nullable = false)
     private Paciente paciente;
 
     private LocalDate fechaTurno;
