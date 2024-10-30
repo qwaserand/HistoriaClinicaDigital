@@ -1,4 +1,4 @@
-package com.fixsys.ctfyphcd.dto;
+package com.fixsys.ctfyphcd.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,8 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReprogramarTurnoRequest {
+public class TurnoRequestDTO {
     private LocalDate fechaTurno;
     private String horario;
+    private Long pacienteId;
 }

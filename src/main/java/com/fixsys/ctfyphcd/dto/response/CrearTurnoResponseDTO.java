@@ -1,4 +1,4 @@
-package com.fixsys.ctfyphcd.dto;
+package com.fixsys.ctfyphcd.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReprogramarTurnoResponse {
+public class CrearTurnoResponseDTO {
     private String dniPaciente;
     private LocalDate fechaTurno;
     private String horario;
