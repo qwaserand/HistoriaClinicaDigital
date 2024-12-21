@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface ProfesionalRepository extends JpaRepository<Profesional, Long> {
     Profesional findByDni(String dni);
     boolean existsByDni(String dni);
+
 }

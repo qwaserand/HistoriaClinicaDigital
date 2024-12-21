@@ -14,6 +14,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private ProfesionalRepository profesionalRepository;
 
+    //------------------------------------------------------------------------------
+
     @Override
     public UserDetails loadUserByUsername(String dni) throws UsernameNotFoundException {
         Profesional profesional = profesionalRepository.findByDni(dni);

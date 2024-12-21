@@ -1,5 +1,6 @@
 package com.fixsys.ctfyphcd.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,7 +19,8 @@ public class Turno {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "paciente_id", referencedColumnName = "dni", nullable = false)
+    @JoinColumn(name = "paciente_id", referencedColumnName = "id", nullable = false)
+    @JsonBackReference
     private Paciente paciente;
 
     private LocalDate fechaTurno;
